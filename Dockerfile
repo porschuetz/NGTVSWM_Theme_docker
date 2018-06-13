@@ -2,6 +2,9 @@ FROM node:10-alpine
 
 RUN apk add --no-cache git ruby
 
+RUN apk add yarn
+
+RUN yarn --version
 
 ENV SASS_BINARY_VERSION 4.7.2
 RUN apk add --no-cache --virtual .build-deps-node-sass curl \
