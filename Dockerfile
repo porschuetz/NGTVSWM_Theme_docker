@@ -1,6 +1,6 @@
 FROM node:10-alpine
 
-RUN apk add --no-cache git ruby python yarn
+RUN apk add --no-cache git ruby yarn python make gcc g++
 
 RUN yarn --version
 
