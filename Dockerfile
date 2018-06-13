@@ -1,8 +1,6 @@
 FROM node:10-alpine
 
-RUN apk add --no-cache git ruby
-
-RUN npm install --global yarn
+RUN apk add --no-cache git ruby python yarn
 
 RUN yarn --version
 
