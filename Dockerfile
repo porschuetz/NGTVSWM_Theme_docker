@@ -2,7 +2,7 @@ FROM node:10-alpine
 
 RUN apk add --no-cache git ruby
 
-RUN apk add yarn
+RUN npm install --global yarn
 
 RUN yarn --version
 
