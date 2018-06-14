@@ -1,7 +1,7 @@
 FROM node:10-alpine
 
-RUN apk add --no-cache git ruby python make gcc g++
+RUN apk add --no-cache git ruby make 
 
-RUN npm install node-sass@latest
+RUN npm install node-sass@4.9.0
 
 CMD ["node"]
